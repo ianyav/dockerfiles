@@ -1,9 +1,20 @@
-#
-# ** THIS IS AN AUTO-GENERATED FILE **
-#
-
-# Default Kibana configuration for docker target
-server.name: kibana
-server.host: "0"
-elasticsearch.hosts: [ "http://elasticsearch:9200" ]
-xpack.monitoring.ui.container.elasticsearch.enabled: true
+server.port: 5601
+server.host: "localhost"
+server.basePath: ""
+server.rewriteBasePath: false
+server.name: "crec-demo-host"
+elasticsearch.hosts: "http://localhost:9200"
+elasticsearch.url: "http://localhost:9200"
+elasticsearch.preserveHost: true
+kibana.index: ".kibana"
+elasticsearch.pingTimeout: 1500
+elasticsearch.requestTimeout: 30000
+elasticsearch.shardTimeout: 0
+elasticsearch.startupTimeout: 5000
+#pid.file: /var/run/kibana.pid
+logging.dest: stdout
+logging.silent: false
+logging.quiet: false
+logging.verbose: false
+ops.interval: 50000
+i18n.locale: "en"
